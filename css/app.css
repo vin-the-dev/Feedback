@@ -1,45 +1,8 @@
-/** Include Styles Specific to the App Here */
-/*
-input[type="range"]::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	position: relative;
-	top: 0px;
-	z-index: 1;
-	width: 50px;
-	height: 50px;
-	-webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
-	border-radius: 40px;
-	border: 0px;
-	background-image: url('images/sad.png');
-	background-size: 100%;
-}*/
-*
-{
-    margin:0;padding:0;
-}
-
-.content{
+#main-slider{
 	width: 100%;
-	margin: 0 auto;
-}
-
-.background-image {
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: -1;  
-  display: block;
-  background-image: url('images/food.jpg');
-  width: 100%;
-  height: 100%;
-  
-  /*-webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);*/
-  background-size: 100%;
+	top: 75%;
+	position: absolute;
+	padding: 5px;
 }
 
 .all-center{
@@ -47,24 +10,6 @@ input[type="range"]::-webkit-slider-thumb {
 	margin: auto;
 	position: absolute;
 	top:0;bottom:0;
-}
-
-#mainsmiley{
-	width: 15%;
-	height: 30%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	
-}
-
-#mainrangeslider{
-	top: 45%;
-	bottom:0;
-}
-
-#detail-rangeslider-food{
-	top: -15rem;
 }
 
 .all-q{
@@ -78,6 +23,14 @@ input[type="range"]::-webkit-slider-thumb {
 #main-q{
 	top: 15%;
 	width: 100%;
+}
+
+#mainsmiley{
+	width: 15%;
+	height: 30%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;	
 }
 
 .angry{
@@ -109,7 +62,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .prev-btn{
 	position: absolute;
-	top: 50vw;
+	top: 85%;
 	left: 5vw;
 	width: 15vw;
 }
