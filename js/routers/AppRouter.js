@@ -2,7 +2,7 @@ app.routers.AppRouter = Backbone.Router.extend({
 
     routes: {
         "":                         "home",
-        "secondpage":               "secondpage",
+        "secondPage":               "secondPage",
         "employees/:id":            "employeeDetails",
         "employees/:id/reports":    "reports",
         "employees/:id/map":        "map"
@@ -25,8 +25,15 @@ app.routers.AppRouter = Backbone.Router.extend({
         app.slider.slidePage(app.homeView.$el);
     },
 
-    secondpage: function (argument) {
-        
+    secondPage: function (argument) {
+        if (!app.secondPageView) {
+            app.secondPageView = new app.views.SecondPageView();
+            app.secondPageView.render();
+        } else {
+            console.log('reusing second page view');
+            app.secondPageView.delegateEvents(); // delegate events when the view is recycled
+        }
+        app.slider.slidePage(app.secondPageView.$el);
     },
 
     employeeDetails: function (id) {

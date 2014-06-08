@@ -1,19 +1,26 @@
-app.views.HomeView = Backbone.View.extend({
+app.views.SecondPageView = Backbone.View.extend({
 
-    initialize: function () {
-        this.searchResults = new app.models.EmployeeCollection();
-        this.searchresultsView = new app.views.EmployeeListView({model: this.searchResults});
+	initialize: function () {		
     },
 
     render: function () {
         this.$el.html(this.template());
-        $('.scroller', this.el).append(this.searchresultsView.render().el);
         return this;
+    },
+
+    afterRender: function() {
+        if(mainSliderValue>50){
+        	$('#main-q').html('Glad to hear that, So did you enjoy your food?');
+        }
+        else{
+        	$('#main-q').html('We are very sorry to hear that, was it the food?');        	
+        }
     },
 
     events: {
         "input #main-slider": "handleSliderChange",
-        "click #home-next-btn": "secondPage"
+        "click #home-next-btn": "thirdPage",
+        "click #home-prev-btn": "homePage"
     },
 
     handleSliderChange: function (e) {
@@ -47,9 +54,13 @@ app.views.HomeView = Backbone.View.extend({
         }
     },
 
-    secondPage: function (argument) {
+    thirdPage: function (argument) {
         mainSliderValue = $('#main-slider').val();
-        window.location.hash = "#secondPage";
+        window.location.hash = "#thirdPage";
+    },
+
+    homePage: function (argument) {
+    	window.location.hash = "#";
     }
 
 });
