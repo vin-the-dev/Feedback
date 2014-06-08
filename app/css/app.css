@@ -1,0 +1,115 @@
+/** Include Styles Specific to the App Here */
+/*
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	position: relative;
+	top: 0px;
+	z-index: 1;
+	width: 50px;
+	height: 50px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	border: 0px;
+	background-image: url('images/sad.png');
+	background-size: 100%;
+}*/
+*
+{
+    margin:0;padding:0;
+}
+
+.content{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;  
+  display: block;
+  background-image: url('images/food.jpg');
+  width: 100%;
+  height: 100%;
+  
+  /*-webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);*/
+  background-size: 100%;
+}
+
+.all-center{
+	left:0;right:0;
+	margin: auto;
+	position: absolute;
+	top:0;bottom:0;
+}
+
+#mainsmiley{
+	width: 15%;
+	height: 30%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	
+}
+
+#mainrangeslider{
+	top: 45%;
+	bottom:0;
+}
+
+#detail-rangeslider-food{
+	top: -15rem;
+}
+
+.all-q{
+	text-align: center;
+	position: absolute;
+	font-size: 6vw;
+	color: white;
+	font-family: 'helvetica';
+}
+
+#main-q{
+	top: 15%;
+	width: 100%;
+}
+
+.angry{
+	background-image: url('images/angry.svg');	
+}
+
+.sad{
+	background-image: url('images/sad.svg');	
+}
+
+.neutral{
+	background-image: url('images/neutral.svg');	
+}
+
+.smiley{
+	background-image: url('images/smiley.svg');	
+}
+
+.happy{
+	background-image: url('images/happy.svg');	
+}
+
+.next-btn{
+	position: absolute;
+	top: 85%;
+	left: 80%;
+	width: 15vw;
+}
+
+.prev-btn{
+	position: absolute;
+	top: 50vw;
+	left: 5vw;
+	width: 15vw;
+}

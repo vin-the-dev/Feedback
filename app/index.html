@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>feedback</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <!-- @@DEVELOPMENT@@ -->
+
+
+    <link href="libs/topcoat-touch/css/topcoat-mobile-light.css" rel="stylesheet">
+
+    <link href="libs/topcoat-touch/css/topcoat-touch.css" rel="stylesheet">
+    <link href="libs/topcoat-touch/css/topcoat-touch-extra.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+
+
+    <script src="cordova.js"></script>
+
+    <script src="libs/topcoat-touch/js/jquery.js"></script>
+
+
+
+    <script src="libs/topcoat-touch/js/iscroll.js"></script>
+
+
+    <script src="libs/topcoat-touch/js/hammer.js"></script>
+
+
+    <script src="libs/topcoat-touch/js/fastclick.js"></script>
+
+
+    <script src="libs/topcoat-touch/js/topcoat-touch.js"></script>
+
+
+    <!-- @@DEVELOPMENT@@ -->
+    <!-- @@PRODUCTION@@
+    <link href="css/feedback.min.css" rel="stylesheet" type="text/css">
+    <script src="cordova.js"></script>
+    <script src="js/feedback.min.js"></script>
+    <!-- @@PRODUCTION@@ -->
+
+</head>
+<body>
+<script src="js/app.js"></script>
+
+    <div id="home">
+        <div class="topcoat-navigation-bar">
+            <div class="topcoat-navigation-bar__item center full">
+                <h1 class="topcoat-navigation-bar__title">Feedback</h1>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content background-image"></div>
+            <div id="homepage">
+                <div id="main-q" class="all-q">How was your experience with us?</div>
+                <div id="mainsmiley" class="neutral all-center"></div>
+                <!-- <input id="mainrangeslider" type="range" class="topcoat-range all-center" style="width:100%"> -->
+                <input id="mainrangeslider" type='range' class='topcoat-range all-center' style="width:100%" 
+                    oninput="showVal(this.value)" onchange="showVal(this.value)">
+                <button id="home-next-btn" class="topcoat-button--large--cta next-btn" >Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="details">        
+        <div class="topcoat-navigation-bar">
+            <!-- <div class="topcoat-navigation-bar__item left quarter">
+                <a class="topcoat-icon-button--quiet back-button" href="#">
+                    <span class="topcoat-icon topcoat-icon--back"></span>
+                </a>
+            </div> -->
+            <div class="topcoat-navigation-bar__item center full">
+                <h1 class="topcoat-navigation-bar__title">Feedback</h1>
+            </div>            
+        </div>
+        <div class="content">
+            <div class="content background-image"></div>
+            <div>
+                <div class="all-q">How was your meal?</div>
+                <input id="detail-rangeslider-food" type='range' class='topcoat-range all-center' style="width:100%" 
+                    oninput="showVal(this.value)" onchange="showVal(this.value)">
+                <button id="details-next-btn" class="topcoat-button--large--cta prev-btn" >Prev</button>
+                <button id="details-next-btn" class="topcoat-button--large--cta next-btn" >Next</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
