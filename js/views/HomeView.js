@@ -49,7 +49,10 @@ app.views.HomeView = Backbone.View.extend({
 
     secondPage: function (argument) {
         mainSliderValue = $('#main-slider').val();
-        window.location.hash = "#secondPage";
+        if(mainSliderValue>45)
+            window.location.hash = "#secondPage";
+        else
+            window.location.hash = "#secondPageSad";
     }
 
 });

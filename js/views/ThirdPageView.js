@@ -1,4 +1,4 @@
-app.views.SecondPageView = Backbone.View.extend({
+app.views.ThirdPageView = Backbone.View.extend({
 
 	initialize: function () {
     },

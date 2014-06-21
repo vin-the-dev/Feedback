@@ -77,3 +77,47 @@
 	left: 5vw;
 	width: 15vw;
 }
+
+
+
+#sec-q-1{
+	top: 10%;
+	width: 100%;
+}
+
+#sec-smiley-1{
+	width: 15%;
+	height: 30%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	top: -40%;
+}
+
+#sec-slider-1{
+	width: 100%;
+	top: 40%;
+	position: absolute;
+	padding: 5px;
+}
+
+#sec-q-2{
+	top: 50%;
+	width: 100%;
+}
+
+#sec-smiley-2{
+	width: 15%;
+	height: 30%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	top: 30%;
+}
+
+#sec-slider-2{
+	width: 100%;
+	top: 75%;
+	position: absolute;
+	padding: 5px;
+}
