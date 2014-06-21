@@ -1,4 +1,4 @@
-app.views.ThirdPageView = Backbone.View.extend({
+app.views.ThankYouPageView = Backbone.View.extend({
 
 	initialize: function () {
     },
@@ -19,15 +19,18 @@ app.views.ThirdPageView = Backbone.View.extend({
 
     events: {
         "click #home-next-btn": "thirdPage",
-        "click #home-prev-btn": "homePage"
+        "click #home-prev-btn": "backPage"
     },
 
     thirdPage: function (argument) {
-        window.location.hash = "#thankYouPage";
+        window.location.hash = "#thirdPage";
     },
 
-    homePage: function (argument) {
-    	window.location.hash = "#";
+    backPage: function (argument) {
+    	if(mainSliderValue>45)
+            window.location.hash = "#secondPage";
+        else
+            window.location.hash = "#secondPageSad";
     }
 
 });

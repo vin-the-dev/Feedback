@@ -26,7 +26,7 @@
 .all-q{
 	text-align: center;
 	position: absolute;
-	font-size: 6vw;
+	font-size: 250%;
 	color: white;
 	font-family: 'helvetica';
 }
@@ -75,10 +75,16 @@
 .prev-btn{
 	position: absolute;
 	top: 85%;
-	left: 5vw;
+	left: 5%;
 	width: 15vw;
 }
 
+.home-btn{
+	position: absolute;
+	top: 085%;
+	left: 5%;
+	width: 15vw;
+}
 
 
 #sec-q-1{

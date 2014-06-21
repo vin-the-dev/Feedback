@@ -21,7 +21,7 @@ app.views.SecondPageView = Backbone.View.extend({
         "input #sec-slider-1": "handleSliderChange1",
         "input #sec-slider-2": "handleSliderChange2",
         "click #home-next-btn": "thirdPage",
-        "click #home-prev-btn": "homePage"
+        "click #home-prev-btn": "backPage"
     },
 
     handleSliderChange1: function (e) {
@@ -87,11 +87,12 @@ app.views.SecondPageView = Backbone.View.extend({
     },
 
     thirdPage: function (argument) {
-        mainSliderValue = $('#main-slider').val();
+        secSlider1Value = $('#sec-slider-1').val();
+        secSlider2Value = $('#sec-slider-2').val();
         window.location.hash = "#thirdPage";
     },
 
-    homePage: function (argument) {
+    backPage: function (argument) {
     	window.location.hash = "#";
     }
 

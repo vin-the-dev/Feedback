@@ -17,7 +17,8 @@ var secSlider2Value;
 
 $(document).on("ready", function () {
     app.router = new app.routers.AppRouter();
-    app.utils.templates.load(["HomeView", "SecondPageView", "SecondPageSadView", "ThirdPageView", "EmployeeView", "EmployeeListItemView", "ReportsView", "MapView"],
+    app.utils.templates.load(["HomeView", "SecondPageView", "SecondPageSadView", "ThirdPageView", "ThankYouPageView", 
+        "EmployeeView", "EmployeeListItemView", "ReportsView", "MapView"],
         function () {
             app.router = new app.routers.AppRouter();
             Backbone.history.start();
