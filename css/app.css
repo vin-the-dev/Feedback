@@ -4,8 +4,9 @@
   right: 0;
   z-index: -1;  
   display: block;
-  /*background-image: url('images/food.jpg');*/
-  background-size: 100%;
+  background-image: url('images/food.jpg');
+  background-size: cover;
+  opacity: 90%
 }
 
 #main-slider{
@@ -120,4 +121,11 @@
 	top: 75%;
 	position: absolute;
 	padding: 5px;
+}
+
+#txt-contact{
+	width: 90%;
+	position: absolute;
+	top: 30%;
+	margin: 5vw;
 }

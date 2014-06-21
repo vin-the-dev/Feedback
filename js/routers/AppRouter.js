@@ -4,6 +4,7 @@ app.routers.AppRouter = Backbone.Router.extend({
         "":                         "home",
         "secondPage":               "secondPage",
         "secondPageSad":            "secondPageSad",
+        "thirdPage":                "thirdPage",
         "employees/:id":            "employeeDetails",
         "employees/:id/reports":    "reports",
         "employees/:id/map":        "map"
@@ -46,6 +47,17 @@ app.routers.AppRouter = Backbone.Router.extend({
             app.secondPageSadView.delegateEvents(); // delegate events when the view is recycled
         }
         app.slider.slidePage(app.secondPageSadView.$el);
+    },
+
+    thirdPage: function (argument) {
+        if (!app.thirdPageView) {
+            app.thirdPageView = new app.views.ThirdPageView();
+            app.thirdPageView.render();
+        } else {
+            console.log('reusing third page view');
+            app.thirdPageView.delegateEvents(); // delegate events when the view is recycled
+        }
+        app.slider.slidePage(app.thirdPageView.$el);
     },
 
     employeeDetails: function (id) {
