@@ -69,21 +69,21 @@
 	position: absolute;
 	top: 85%;
 	left: 80%;
-	width: 15vw;
+	width: 7rem;
 }
 
 .prev-btn{
 	position: absolute;
 	top: 85%;
 	left: 5%;
-	width: 15vw;
+	width: 7rem;
 }
 
 .home-btn{
 	position: absolute;
-	top: 085%;
-	left: 5%;
-	width: 15vw;
+	top: 85%;
+	left: 50%;
+	width: 7rem;
 }
 
 

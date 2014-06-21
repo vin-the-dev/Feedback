@@ -27,7 +27,10 @@ app.views.ThirdPageView = Backbone.View.extend({
     },
 
     homePage: function (argument) {
-    	window.location.hash = "#";
+    	if(mainSliderValue>45)
+            window.location.hash = "#secondPage";
+        else
+            window.location.hash = "#secondPageSad";
     }
 
 });
