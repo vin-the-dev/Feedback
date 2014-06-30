@@ -22,7 +22,7 @@ app.views.ThankYouPageView = Backbone.View.extend({
     },
 
     homePage: function (argument) {
-        $.post("http://vin.indusgs.co.uk/selectfeedback.php",
+        $.post("http://vin.indusgs.co.uk/savefeedback.php",
             {
                 company : company,
                 value1 : mainSliderValue,

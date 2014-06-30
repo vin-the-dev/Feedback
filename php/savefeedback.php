@@ -3,8 +3,8 @@
 // ini_set('display_errors',true);
 // error_reporting(E_ALL);
 
-// $http_origin = $_SERVER['HTTP_ORIGIN'];
-// header('Content-type: application/json');
+$http_origin = $_SERVER['HTTP_ORIGIN'];
+header('Content-type: application/json');
 
 
 $company = $_POST['company'];
@@ -25,7 +25,7 @@ $sql_q = "INSERT INTO `feedback_main`(`COMPANY`, `VALUE1`, `VALUE2`, `VALUE3`,
 
 $res = $con->query($sql_q);
 
-echo $sql_q;
+// echo $sql_q;
 
 echo $res;
 
