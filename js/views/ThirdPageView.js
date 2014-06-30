@@ -22,7 +22,13 @@ app.views.ThirdPageView = Backbone.View.extend({
         "click #home-prev-btn": "homePage"
     },
 
-    thirdPage: function (argument) {
+    thirdPage: function (argument) {        
+        if (isValidEmailAddress($('#txt-contact').val())) {
+            custEmail = $('#txt-contact').val();
+        }
+        else{
+            custPhone = $('#txt-contact').val()
+        }
         window.location.hash = "#thankYouPage";
     },
 

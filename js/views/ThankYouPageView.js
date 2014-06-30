@@ -22,6 +22,28 @@ app.views.ThankYouPageView = Backbone.View.extend({
     },
 
     homePage: function (argument) {
+        $.post("http://vin.indusgs.co.uk/selectfeedback.php",
+            {
+                company : company,
+                value1 : mainSliderValue,
+                value2 : secSlider1Value,
+                value3 : secSlider2Value,
+                custEmail : custEmail,
+                custPhone : custPhone,
+                createdBy : employee
+            });
+        
+        mainSliderValue = "";
+        secSlider1Value = "";
+        secSlider2Value = "";
+        custEmail = "";
+        custPhone = "";
+
+        app.homeView = null;
+        app.secondPageView = null;
+        app.secondPageSadView = null;
+        app.thirdPageView = null;
+
         window.location.hash = "#";
     }
 });
